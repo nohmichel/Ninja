@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Disappearing Kitty</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<script defer src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Jquery - assignment 1</h1>
+		<div id="firstrow">
+			<img src="kitty.jpg" id="k1" class="image" alt="Photo of Kitten with paws up.">
+			<img src="kitty.jpg" id="k2" class="image" alt="Photo of Kitten with paws up.">
+			<img src="kitty.jpg" id="k3" class="image" alt="Photo of Kitten with paws up.">
+			<img src="Kitty.jpg" id="k4" class="image" alt="Photo of Kitten with paws up.">
+		</div>
+		<div id="secondrow">
+			<img src="Kitty.jpg" id="k5" class="image" alt="Photo of Kitten with paws up." >
+			<img src="Kitty.jpg" id="k6" class="image" alt="Photo of Kitten with paws up.">
+			<img src="Kitty.jpg" id="k7" class="image" alt="Photo of Kitten with paws up.">
+			<img src="Kitty.jpg" id="k8" class="image" alt="Photo of Kitten with paws up.">
+		</div>
+		<div id="button">		
+			<button id="restore">Restore</button>
+		</div>	
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('img').click (function(){
+				$(this).hide();
+			});
+			$('#restore').click(function(){
+				$('img').show();
+			});		
+		});	
+	</script>	
+		}
+</body>
+</html>

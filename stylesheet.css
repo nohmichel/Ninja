@@ -1,0 +1,15 @@
+*{
+}
+
+#container{
+	align-items: center;
+	width: 855px;
+	padding: 20px;
+	margin: auto;
+	outline: 3px solid black;
+}
+
+.image {
+	width: 200px;
+	padding: 5px;
+}
